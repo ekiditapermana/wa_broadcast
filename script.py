@@ -11,7 +11,7 @@ def save_to_file(status, data):
     with open(f'{status}_dikirim_{datetime.now()}.txt', 'w') as f:
         for i in data:
             f.write(f'{i}\n')
-        print('done')
+    save_to_file.close()
 
 start = time()
 
